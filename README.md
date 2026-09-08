@@ -26,6 +26,20 @@ Run the script:
 ```bash
 ng generate @angular/material:theme-color
 ```
+and save it to src/assets/styles
+The current theme for angular material is `theme-colors.scss`
+
+### Tailwind theme
+The template already have a predefined tailwind theme that maps the variables to the angular material variables.
+The current theme for tailwind is `theme.css`
+
+### Material symbols
+The new material symbols are generated using a tool. The scripts that generates the symbols are located at `tools/` and contains two scrpts.
+- material-symbols.icons.mjs. It contains the name of all the symbols that will be used in the app.
+- generate-material-symbols.mjs. This is the script that is executed to create the css file that will contain all the symbols.
+
+This tool can be executed using the script: `npm run generate:icons` and it will generate a new .css file located at `src/assets/styles/material-symbols.generated.css` 
+
 
 ## Folder structure
 
