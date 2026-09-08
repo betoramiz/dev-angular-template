@@ -1,10 +1,11 @@
 import { Component, computed, inject, TemplateRef, viewChild } from '@angular/core';
 import { PageModalModel } from '@shared-ui/page-modal/page-modal-model';
 import { NgTemplateOutlet } from '@angular/common';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogClose, MatDialogRef } from '@angular/material/dialog';
+import { MatButton } from '@angular/material/button';
 
 @Component({
-  imports: [NgTemplateOutlet],
+  imports: [NgTemplateOutlet, MatButton, MatDialogClose],
   selector: 'page-modal',
   styleUrl: './page-modal.css',
   templateUrl: './page-modal.html',

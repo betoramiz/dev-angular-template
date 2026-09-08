@@ -22,6 +22,11 @@ Run the script:
   ng add @angular/material
 ```
 
+### Create custom angular material theme
+```bash
+ng generate @angular/material:theme-color
+```
+
 ## Folder structure
 
 - Features. This folder is located at `/src/features` and contains all the features for the app.
