@@ -1,59 +1,38 @@
 # DevTemplate
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.3.
+  This is a template with the goal of boost the begining of a proyect.
+  It includes the regular folders, strcuture and dependencies needed to start a new web solution.
+  
+  The UI library is optional, I like to wokr with angular material and tailwind but this proyect does not includes the installation. However, there are instructions about how to install and configure them.
 
-## Development server
+  *This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.3.*
 
-To start a local development server, run:
 
+## Installations
+
+### Install Tailwind
+Run the script
 ```bash
-ng serve
+ ng add tailwindcss
+```
+### Install Angular Material as the UI Component library.
+
+Run the script:
+```bash
+  ng add @angular/material
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Folder structure
 
-## Code scaffolding
+- Features. This folder is located at `/src/features` and contains all the features for the app.
+- Layout. This folder is located at `/src/Layout` and contains the Layout shared for the navigation.
+- Shared. This folder is located at `/src/shared` and contains the shared items for the entire application (ui components, services, pipes, directives, models, etc).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+![img.png](img.png)
 
-```bash
-ng generate component component-name
-```
+# How to use.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Clone the repository.
+2. Change the name.
+3. remove the no needed files like `img.png`
+4. 
