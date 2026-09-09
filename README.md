@@ -40,6 +40,28 @@ The new material symbols are generated using a tool. The scripts that generates 
 
 This tool can be executed using the script: `npm run generate:icons` and it will generate a new .css file located at `src/assets/styles/material-symbols.generated.css` 
 
+## Ngx-env builder
+install the npm package to manage .env variables
+```bash
+  npm i @ngx-env/builder
+```
+Replace the builder from angular.json:
+
+```
+architect > build > builder:
+"builder": "@ngx-env/builder:application"
+```
+
+```
+architect > serve > builder:
+"builder": "@ngx-env/builder:dev-server"
+```
+
+```
+architect > test > builder:
+"builder": "@ngx-env/builder:unit-test"
+```
+
 
 ## Folder structure
 
